@@ -1,0 +1,7 @@
+DATA SOURCES
+
+2020 VOTING DATA -
+https://www.presidency.ucsb.edu/statistics/elections/2020
+
+2019 & 2022 EDUCATION DATA FOR READING AND MATH -
+https://www.nationsreportcard.gov/
