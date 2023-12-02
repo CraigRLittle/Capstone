@@ -1,0 +1,93 @@
+
+
+
+-- SELECT *
+SELECT 	E19.STATE, 							-- 1
+		E19."MATH%" AS "MATH % '19", 		-- 2
+		E22."MATH%" AS "MATH % '22",		-- 3
+		E19."READING%" AS "READING % '19", 	-- 4
+		E22."READING%" AS "READING % '22",	-- 5
+		EL20."BIDEN%" AS "BIDEN VOTE %",	-- 6
+		EL20."TRUMP%" AS "TRUMP VOTE %"		-- 7
+		
+FROM Education19 E19
+INNER JOIN Education22 E22 ON E22."STATE" = E19."STATE"
+INNER JOIN Election20 EL20 ON EL20."STATE" = E19."STATE"=
+
+
+
+-- TOP 15
+-- MID 20
+-- BOT 15
+
+-- SELECT *
+SELECT 	E19.STATE, 							-- 1
+		E19."MATH%" AS "MATH % '19", 		-- 2
+		E22."MATH%" AS "MATH % '22",		-- 3
+		E19."READING%" AS "READING % '19", 	-- 4
+		E22."READING%" AS "READING % '22",	-- 5
+		EL20."BIDEN%" AS "BIDEN VOTE %",	-- 6
+		EL20."TRUMP%" AS "TRUMP VOTE %"		-- 7
+		
+FROM Education19 E19
+INNER JOIN Education22 E22 ON E22."STATE" = E19."STATE"
+INNER JOIN Election20 EL20 ON EL20."STATE" = E19."STATE"
+ORDER BY 7 DESC
+LIMIT 15;
+
+
+
+-- TOP 15
+-- MID 20
+-- BOT 15
+
+-- SELECT *
+SELECT 	E19.STATE, 							-- 1
+		E19."MATH%" AS "MATH % '19", 		-- 2
+		E22."MATH%" AS "MATH % '22",		-- 3
+		E19."READING%" AS "READING % '19", 	-- 4
+		E22."READING%" AS "READING % '22",	-- 5
+		EL20."BIDEN%" AS "BIDEN VOTE %",	-- 6
+		EL20."TRUMP%" AS "TRUMP VOTE %"		-- 7
+		
+FROM Education19 E19
+INNER JOIN Education22 E22 ON E22."STATE" = E19."STATE"
+INNER JOIN Election20 EL20 ON EL20."STATE" = E19."STATE"
+ORDER BY 6 DESC
+LIMIT 15;
+
+
+
+-- SELECT *
+SELECT 	E19.STATE, 							-- 1
+		E19."MATH%" AS "MATH % '19", 		-- 2
+		E22."MATH%" AS "MATH % '22",		-- 3
+		E19."READING%" AS "READING % '19", 	-- 4
+		E22."READING%" AS "READING % '22",	-- 5
+		EL20."BIDEN%" AS "BIDEN VOTE %",	-- 6
+		EL20."TRUMP%" AS "TRUMP VOTE %"		-- 7
+		
+FROM Education19 E19
+INNER JOIN Education22 E22 ON E22."STATE" = E19."STATE"
+INNER JOIN Election20 EL20 ON EL20."STATE" = E19."STATE"
+WHERE E19.STATE IN 	
+			('Alaska',
+			'Arizona',
+			'Florida',
+			'Georgia',
+			'Iowa',
+			'Kansas',
+			'Maine',
+			'Michigan',
+			'Minnesota',
+			'Missouri',
+			'Montana',
+			'Nevada',
+			'New Hampshire',
+			'North Carolina',
+			'Ohio',
+			'Pennsylvania',
+			'South Carolina',
+			'Texas',
+			'Virginia',
+			'Wisconsin')
